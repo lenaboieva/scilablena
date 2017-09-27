@@ -1,13 +1,6 @@
 a=0.02456
- a  = 
+b=0.007823
 
-   0.02456
+c=input("value of c")
 
---> b=0.007823
- b  = 
-
-   0.007823
-
---> c=input("value of c")
-
---> ((a+b)/(a-b))*asin(c)
+((a+b)/(a-b))*asin(c)
