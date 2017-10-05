@@ -1,0 +1,9 @@
+X=-2:2
+Y=(1+X^2)./(1+2*X^2)
+plot(X,Y)
+X=-2:0
+Y=3*(sin(X))^2-(cos(X))^2
+plot(X,Y)
+X=0:2
+Y=3*sqrt(1+X^2)
+plot(X,Y)
