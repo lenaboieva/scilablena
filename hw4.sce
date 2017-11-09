@@ -2,7 +2,7 @@ timer()
 x=primes(10^6)
 disp(x)
 disp("time="+string(timer()))
-disp("<primes>:completed") //інформація для юзера
+
 pause
 
 //второе задание
@@ -43,8 +43,8 @@ y1=[]
 n=[2:1:1000]
 for i=1:999
     x=primes(n(i))
-    n2=size(x)   //ищем простые числа и их кол-во
-    y1=[y1,n2(2)]  //pi(n)
+    n2=size(x)                 //ищем простые числа и их кол-во
+    y1=[y1,n2(2)]      //pi(n)
 end
 y2=n./log(n)    
 plot(n,y1,'red')    //график pi(n)
@@ -61,12 +61,12 @@ p=primes(10^5)
 disp("time="+string(timer())) //время работы
 n1=size(p)   //кол-во простых чисел
 n=1
-while p(n)<10^4     //заменяем числа, не удовлеворяющие условие на нули 
+while p(n)<10^4     //заменяем числа, не удовлеворяющие условие на нолики 
     p(n)=0
     n=n+1
 end
 
-disp("time="+string(timer())) //время работы
+disp("time="+string(timer()))           //время работы
 
 quantity=0
 
@@ -111,7 +111,7 @@ end
 
 disp(quantity)  //вывод кол-ва
 
-percent=quantity/N2*100   //процент простых
+percent=quantity/N2*100            //процент простых
 disp(string(percent)+"%")
 pause
 
@@ -142,4 +142,4 @@ end
 disp("p="+string(p))    //числа-контрпримеры
 disp("q="+string(q))
 
-disp("time="+string(timer()))  //виводим время
+disp("time="+string(timer()))  //выводим время
